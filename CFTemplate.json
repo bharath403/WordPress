@@ -28,9 +28,9 @@
 	"Region": {
 	   "Description": "The AWS Region selects keys, vpcs, etc.",
 	   "Type": "String",
-	   "Default": "us-east-1",
+	   "Default": "us-east-1a",
 	   "AllowedValues": [
-		"us-east-1",
+		"us-east-1a",
 		"us-west-2"
 	   ],
 	   "ConstraintDescription": "us-east-1, us-west-2 allowed."
@@ -203,9 +203,9 @@
         }],
         "UserData"       : { "Fn::Base64" : { "Fn::Join" : ["", [
              "#!/bin/bash -xe\n",
-             "apt-get update",
-             "apt-get upgrade -y",
-			 "apt-get install -y chef-client",
+             "yum update",
+             "yum upgrade -y",
+			 "yum install -y chef-client",
 			 "mkdir chef-repo && cd chef-repo && knife cookbook site download wordpress",
 			 "chef-client -z wordpress"
         ]]}}
