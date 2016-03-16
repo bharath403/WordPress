@@ -22,6 +22,6 @@ Go Through the Steps and click Create.
 Monitor for Any Failed Events and try resolving them if any.
 Everything Should be Green and the status should show Create_Complete.
 The script.sh installs packages, downloads wordpress, starts the httpd, mysql service and modifies the permissions of /var/www/html to apache user
-Configure the MySQL DB 
+Configure the MySQL DB and this should have the WordPress Site up and Running.
 
 
