@@ -14,4 +14,10 @@ The CF Template provisions the following resoruces
  Outbound Http Network ACL
  
  How to Use Template
- 
+
+Clone this Repository locally
+Login to AWS and navigate to Cloud Formation Service
+Create a New Stack and upload CFTemplate/CFTemplate.json file from local repository
+Go Through the Steps and click Create
+Monitor for Any Failed Events and try resolving them if any
+Everything Should be Green and the status should show Create_Complete
